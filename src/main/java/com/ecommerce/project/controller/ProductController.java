@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     ProductService productService;
 
-    @PostMapping("/admin/categories/{categodyId}/ product")
+    @PostMapping("/admin/categories/{categodyId}/product")
     public ResponseEntity<ProductDTO> addProduct(@RequestBody ProductDTO productDTO,
                                                  @PathVariable Long categoryId){
 
